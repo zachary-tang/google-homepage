@@ -1,3 +1,9 @@
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
 body {
   font-family: arial, sans-serif;
   font-size: 14px;
@@ -76,7 +82,7 @@ input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  width: 80vw;
   max-width: 400px;
 }
 
@@ -87,8 +93,31 @@ input {
   border-color: white;
   border: 1px solid #eee;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .search-btns:hover {
   border: 1px solid #e1e1e1;
+}
+
+.footer {
+  background-color: #eee;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-menu-left {
+  display: flex;
+  padding: 10px;
+}
+
+.footer-menu-right {
+  display: flex;
+  padding: 10px;
 }
